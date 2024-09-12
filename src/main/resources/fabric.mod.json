@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "hinder",
+	"version": "${version}",
+	"name": "Hinder",
+	"description": "Hinder allows you to seamlessly pass through leaves just like in the real world",
+	"authors": [
+		"endative"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/endative/Hinder-Fabric-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/hinder/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.endative.hinder.Hinder"
+		],
+		"fabric-datagen": [
+			"net.endative.hinder.HinderDataGenerator"
+		],
+		"client": [
+			"net.endative.hinder.HinderClient"
+		]
+	},
+	"mixins": [
+		"hinder.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
